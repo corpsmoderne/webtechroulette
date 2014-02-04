@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Web Tech Roulette</title>
+
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="game.js"></script>
+
+    <style>
+      #main {
+        font-family: monospace;
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 5em;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        padding: 1em;
+        border: thin solid grey;
+      }
+
+      .col1 {
+        text-align: right;
+      }
+
+      .col2 {
+        width: 300px;
+        text-align: center;
+      }
+
+      .selected {
+        background: #ccc;
+      }
+
+      #advice {
+        display: none;
+        text-align: right;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Web Tech Roulette</h1>
+      <p>The best technology combination for your project is:</p>
+      <table>
+        <tr><td class="col1">Client side:</td><td class="col2" id="frontEnd">---</td></tr>
+        <tr><td class="col1">Server side:</td><td class="col2" id="backEnd">---</td></tr>
+        <tr><td class="col1">Database:</td><td class="col2" id="db">---</td></tr>
+        <tr><td class="col1">Operating System:</td><td class="col2" id="os">---</td></tr>
+      </table>
+
+      <p id="advice"><b>Chill out!</b> it's just a joke. You may probably want to define your project and 
+        your needs more precisely to get a better answer...</p>
+
+    </div>
+
+  </body>
+</html>
